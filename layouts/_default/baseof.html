@@ -2,6 +2,8 @@
 <html lang="en">
 	{{ partial "head.html" . }}
 <body>
+	{{ partialCached "header.html" . }}
 	{{ block "main" . }}{{ end }}
+	{{ partialCached "footer.html" . }}
 </body>
 </html>
