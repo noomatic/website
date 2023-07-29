@@ -1,0 +1,13 @@
+[build]
+    # Directory to change to before starting a build
+    base = "/"
+
+    # Directory that contains the deploy-ready HTML files
+    # Relative to the base directory
+    publish = "public"
+
+    # Default build command
+    command = "make"
+
+[build.environment]
+HUGO_VERSION = "0.115.4"
