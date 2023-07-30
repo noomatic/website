@@ -125,11 +125,31 @@ p {
 }
 
 /* Layout */
-body {
-	display: flex;
-	place-content: center;
+nav {
+	border-block-end: var(--border);
 }
-main {
-	place-self: center;
-	text-align: center;
+
+.container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gutter);
+}
+
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.stack > * {
+	margin-block: 0;
+}
+
+.stack > * + * {
+	margin-block-start: var(--space, 1.5rem);
 }
