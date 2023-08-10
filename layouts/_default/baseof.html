@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 	{{ partial "head.html" . }}
-<body>
-	{{ partialCached "header.html" . }}
-	{{ block "main" . }}{{ end }}
-	{{ partialCached "footer.html" . }}
-</body>
+	<body class="stack">
+		<header>
+			<div class="stack container">
+				{{ partialCached "header.html" . }} 
+				{{ block "header" . }}{{ end }}
+			</div>
+		</header>
+		{{ block "main" . }}{{ end }} 
+		{{ partialCached "footer.html" . }}
+	</body>
 </html>
