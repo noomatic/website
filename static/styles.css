@@ -238,3 +238,12 @@ header nav a {
 	display: inline-flex;
 	padding: 10px 20px;
 }
+
+.heading-accent {
+	display: flex;
+	flex-direction: column;
+}
+
+.heading-accent p {
+	order: -1;
+}
