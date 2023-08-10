@@ -169,3 +169,27 @@ nav {
 .stack > * + * {
 	margin-block-start: var(--space, 1.5rem);
 }
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  --threshold: 30rem;
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--threshold) - 100%) * 999);
+}
+
+.button {
+	background-color: var(--color-1);
+	color: var(--color-3);
+	text-decoration: none;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: var(--radius);
+	display: inline-flex;
+	padding: 10px 20px;
+}
