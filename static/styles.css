@@ -192,6 +192,15 @@ header nav a {
 	gap: var(--grid-gutter);
 }
 
+@supports (width: min(calc(var(--grid-max-width) / 3), 100%)) {
+	.grid {
+		grid-template-columns: repeat(
+			auto-fit,
+			minmax(min(calc(var(--grid-max-width) / 3), 100%), 1fr)
+		);
+	}
+}
+
 .stack {
 	display: flex;
 	flex-direction: column;
