@@ -144,9 +144,38 @@ a {
 	color: var(--color-1);
 	text-decoration: underline;
 }
+
 /* Layout */
-nav {
+header {
+	padding-block: var(--space-l);
+	background-color: var(--color-3);
+	color: var(--color-1);
+}
+
+header nav {
 	border-block-end: var(--border);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gutter);
+	justify-content: space-between;
+	padding-block-end: var(--space-2xs);
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gutter);
+}
+
+header nav ul li {
+	display: inline-flex;
+}
+
+header nav a {
+	text-underline-offset: 2px;
+	text-decoration-thickness: var(--thickness);
 }
 
 .container {
