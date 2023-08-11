@@ -3,7 +3,7 @@
 	--color-1: hsl(222, 100%, 61%);
 	--color-2: hsl(0, 0%, 13%);
 	--color-3: hsl(222, 79%, 93%);
-	--color-4: ;
+	--color-4: hsl(222, 79%, 99%);
 	--thickness: 2px;
 	--radius: 8px;
 	--border: var(--thickness) solid var(--color-1);
@@ -113,6 +113,7 @@ body {
 	font-family: "IBM Plex Sans", sans-serif;
 	font-size: var(--step-0);
 	color: var(--color-2);
+	background-color: var(--color-4);
 }
 
 h1,
