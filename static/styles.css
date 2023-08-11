@@ -233,6 +233,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--grid-gutter);
+	align-items: center;
 }
 
 .two-col > :last-child {
@@ -243,6 +244,23 @@ footer {
 	flex-basis: 0;
 	flex-grow: 999;
 	min-inline-size: 30%;
+}
+
+.feature {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gutter);
+	align-items: center;
+}
+
+.feature > :first-child {
+	flex-grow: 1;
+}
+
+.feature > :last-child {
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 20%;
 }
 
 .stack {
@@ -256,7 +274,7 @@ footer {
 }
 
 .stack > * + * {
-	margin-block-start: var(--space, 1.5rem);
+	margin-block-start: var(--space-xl, 1.5rem);
 }
 
 .switcher {
@@ -271,6 +289,29 @@ footer {
 	flex-basis: calc((var(--threshold) - 100%) * 999);
 }
 
+.frame {
+	--n: 16;
+	--d: 9;
+	aspect-ratio: var(--n) / var(--d);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.frame > img,
+.frame > video {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+}
+
+.blue-frame {
+	background-color: var(--color-3);
+	padding: var(--space-l);
+	border-radius: var(--radius);
+}
+
 .button {
 	background-color: var(--color-1);
 	color: var(--color-3);
@@ -282,6 +323,7 @@ footer {
 	display: inline-flex;
 	padding: 10px 20px;
 	max-width: min-content;
+	margin-block: var(--space-s);
 }
 
 .heading-accent {

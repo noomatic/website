@@ -1,6 +1,6 @@
 {{ define "header" }}
 <div class="two-col">
-	<div class="stack">
+	<div>
 		<h1>A big, bold statement that spans multiple lines.</h1>
 		<p>
 			Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Consectetur
@@ -8,57 +8,55 @@
 			temporibus aut! Aliquid, eos quaerat, repellendus impedit tempora eligendi
 			possimus reprehenderit.
 		</p>
-		<a class="button" href="">Action</a>
+		<a class="button" href="/contact/">Action</a>
 	</div>
-	<figure style="width: 320px; height: 320px"></figure>
+	<figure>
+		<img src="/icons/db.svg" alt="" />
+	</figure>
 </div>
 {{ end }} {{ define "main" }}
 <main class="container stack">
-	<section>
+	<section class="stack">
 		<div class="heading-accent">
 			<h2>Services we offer</h2>
 			<p>Accent</p>
 		</div>
 		<div class="grid">
-			<div class="stack">
-				<img src="" alt="" />
-				<h3>Scientific beaker refills</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui
-					quaerat, maxime aspernatur eos tempore error laboriosam aliquam
-					commodi hic nisi, officiis veritatis ipsa repellendus doloremque
-					explicabo unde voluptate tenetur.
-				</p>
+			<div class="feature">
+				<figure>
+					<img src="/icons/beaker.svg" alt="" width="128px" height="128px" />
+				</figure>
+				<div>
+					<h3>Scientific beaker refills</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
 			</div>
-			<div class="stack">
-				<img src="" alt="" />
-				<h3>Scientific beaker refills</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui
-					quaerat, maxime aspernatur eos tempore error laboriosam aliquam
-					commodi hic nisi, officiis veritatis ipsa repellendus doloremque
-					explicabo unde voluptate tenetur.
-				</p>
+			<div class="feature">
+				<figure>
+					<img src="/icons/beaker.svg" alt="" width="128px" height="128px" />
+				</figure>
+				<div>
+					<h3>Scientific beaker refills</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
 			</div>
-			<div class="stack">
-				<img src="" alt="" />
-				<h3>Scientific beaker refills</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui
-					quaerat, maxime aspernatur eos tempore error laboriosam aliquam
-					commodi hic nisi, officiis veritatis ipsa repellendus doloremque
-					explicabo unde voluptate tenetur.
-				</p>
+			<div class="feature">
+				<figure>
+					<img src="/icons/beaker.svg" alt="" width="128px" height="128px" />
+				</figure>
+				<div>
+					<h3>Scientific beaker refills</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
 			</div>
-			<div class="stack">
-				<img src="" alt="" />
-				<h3>Scientific beaker refills</h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui
-					quaerat, maxime aspernatur eos tempore error laboriosam aliquam
-					commodi hic nisi, officiis veritatis ipsa repellendus doloremque
-					explicabo unde voluptate tenetur.
-				</p>
+			<div class="feature">
+				<figure>
+					<img src="/icons/beaker.svg" alt="" width="128px" height="128px" />
+				</figure>
+				<div>
+					<h3>Scientific beaker refills</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -72,7 +70,9 @@
 				vitae, rerum numquam dolor.
 			</p>
 		</div>
-		<img src="" alt="" />
+		<figure class="blue-frame">
+			<img src="/icons/brackets.svg" alt="" />
+		</figure>
 	</section>
 	<section class="cta stack">
 		<h2>Call to Action</h2>
