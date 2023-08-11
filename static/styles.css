@@ -196,6 +196,10 @@ header nav a {
 	text-decoration-thickness: var(--thickness);
 }
 
+header > div > nav > a {
+	text-decoration: none;
+}
+
 footer {
 	width: 100%;
 	padding-block-end: var(--space-m);
