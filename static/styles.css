@@ -157,6 +157,10 @@ header {
 
 header nav {
 	border-block-end: var(--border);
+}
+
+header nav,
+footer {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--grid-gutter);
@@ -164,7 +168,8 @@ header nav {
 	padding-block-end: var(--space-2xs);
 }
 
-header nav ul {
+header nav ul,
+footer ul {
 	list-style: none;
 	padding: 0;
 	display: flex;
@@ -172,13 +177,19 @@ header nav ul {
 	gap: var(--grid-gutter);
 }
 
-header nav ul li {
+header nav ul li,
+footer ul li {
 	display: inline-flex;
 }
 
 header nav a {
 	text-underline-offset: 2px;
 	text-decoration-thickness: var(--thickness);
+}
+
+footer {
+	width: 100%;
+	padding-block-end: var(--space-m);
 }
 
 .container {

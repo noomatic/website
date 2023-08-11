@@ -1,0 +1,8 @@
+<footer class="container">
+	<p>© Noomatic</p>
+	<ul>
+		{{ range .Site.Menus.main }}
+			<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+		{{ end }}
+	</ul>
+</footer>
