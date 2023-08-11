@@ -213,19 +213,19 @@ footer {
 }
 
 .two-col {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--grid-gutter);
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--grid-gutter);
 }
 
 .two-col > :last-child {
-  flex-grow: 1;
+	flex-grow: 1;
 }
 
 .two-col > :first-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-inline-size: 30%;
+	flex-basis: 0;
+	flex-grow: 999;
+	min-inline-size: 30%;
 }
 
 .stack {

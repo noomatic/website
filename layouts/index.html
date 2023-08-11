@@ -1,17 +1,19 @@
 {{ define "header" }}
-<div class="stack">
-	<h1>A big, bold statement that spans multiple lines.</h1>
-	<p>
-		Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Consectetur
-		dolorem, veniam est eaque vel laborum voluptas quidem sint voluptatem
-		temporibus aut! Aliquid, eos quaerat, repellendus impedit tempora eligendi
-		possimus reprehenderit.
-	</p>
-	<a class="button" href="">Action</a>
+<div class="two-col">
+	<div class="stack">
+		<h1>A big, bold statement that spans multiple lines.</h1>
+		<p>
+			Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Consectetur
+			dolorem, veniam est eaque vel laborum voluptas quidem sint voluptatem
+			temporibus aut! Aliquid, eos quaerat, repellendus impedit tempora eligendi
+			possimus reprehenderit.
+		</p>
+		<a class="button" href="">Action</a>
+	</div>
+	<figure style="width: 320px; height: 320px"></figure>
 </div>
-<figure></figure>
 {{ end }} {{ define "main" }}
-<main class="container">
+<main class="container stack">
 	<section>
 		<div class="heading-accent">
 			<h2>Services we offer</h2>
@@ -72,7 +74,7 @@
 		</div>
 		<img src="" alt="" />
 	</section>
-	<section class="cta">
+	<section class="cta stack">
 		<h2>Call to Action</h2>
 		<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
