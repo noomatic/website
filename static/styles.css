@@ -244,7 +244,7 @@ footer {
 .two-col > :first-child {
 	flex-basis: 0;
 	flex-grow: 999;
-	min-inline-size: 30%;
+	min-inline-size: 50%;
 }
 
 .feature {
@@ -268,13 +268,14 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	width: 100%;
 }
 
 .stack > * {
 	margin-block: 0;
 }
 
-.stack > * + * {
+.stack > * + *:not(main) {
 	margin-block-start: var(--space-xl, 1.5rem);
 }
 
@@ -311,6 +312,16 @@ footer {
 	background-color: var(--color-3);
 	padding: var(--space-l);
 	border-radius: var(--radius);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .button {
@@ -352,4 +363,11 @@ footer {
 
 .cta > :where(h2, p) {
 	max-width: 40rem;
+}
+
+.hero {
+	background-color: var(--color-3);
+	color: var(--color-1);
+	margin-block-start: 0;
+	padding-block-end: var(--space-l);
 }
