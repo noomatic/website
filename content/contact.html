@@ -35,15 +35,15 @@ title: Contact Us
 	</div>
 </section>
 <section class="container stack">
-	<form action="">
-		<label for="name">Name</label>
-		<input type="text" name="name" />
+	<form action="" class="stack small">
+		<label for="name">Name (required)</label>
+		<input type="text" name="name" required/>
 		<label for="company">Company Name</label>
 		<input type="text" name="company" />
-		<label for="email">Email</label>
-		<input type="email" name="email" />
-		<label for="message">Message</label>
-		<textarea name="message" id="" cols="30" rows="8"></textarea>
-		<input type="submit" />
+		<label for="email">Email (required)</label>
+		<input type="email" name="email" required/>
+		<label for="message">Message (required)</label>
+		<textarea name="message" id="" cols="30" rows="8" required></textarea>
+		<input type="submit" value="Send Inquiry" />
 	</form>
 </section>

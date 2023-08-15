@@ -279,6 +279,10 @@ footer {
 	margin-block-start: var(--space-xl, 1.5rem);
 }
 
+.stack .small > * + * {
+	margin-block-start: var(--space-xs, 1.5rem);
+}
+
 .switcher {
 	display: flex;
 	flex-wrap: wrap;
@@ -324,7 +328,8 @@ figure {
 	align-items: center;
 }
 
-.button {
+.button,
+input[type="submit"] {
 	background-color: var(--color-1);
 	color: var(--color-3);
 	text-decoration: none;
@@ -336,6 +341,13 @@ figure {
 	padding: 10px 20px;
 	max-width: min-content;
 	margin-block: var(--space-s);
+	border: none;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+	filter: brightness(120%);
+	transition: filter 0.1s ease-in-out;
 }
 
 .heading-accent {
@@ -374,4 +386,15 @@ figure {
 
 .hero h1 {
 	margin-block-end: var(--space-xs);
+}
+
+input:not([type="submit"]),
+textarea {
+	border-radius: var(--radius);
+	border: var(--thickness) solid var(--color-3);
+	padding: var(--space-2xs);
+}
+
+:is(input:not([type="submit"]), textarea):focus {
+	border-color: var(--color-1);
 }
