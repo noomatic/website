@@ -329,7 +329,6 @@ figure {
 }
 
 .button,
-input[type="submit"],
 button {
 	background-color: var(--color-1);
 	color: var(--color-3);
@@ -346,7 +345,6 @@ button {
 }
 
 .button:hover,
-input[type="submit"]:hover,
 button:hover {
 	filter: brightness(120%);
 	transition: filter 0.1s ease-in-out;
@@ -390,13 +388,23 @@ button:hover {
 	margin-block-end: var(--space-xs);
 }
 
-input:not([type="submit"], button),
+form {
+	max-width: 40rem;
+	margin: auto;
+}
+
+input,
 textarea {
 	border-radius: var(--radius);
 	border: var(--thickness) solid var(--color-3);
 	padding: var(--space-2xs);
 }
 
-:is(input:not([type="submit"]), textarea):focus {
+input:focus,
+textarea:focus {
 	border-color: var(--color-1);
+}
+
+button {
+	align-self: center;
 }
