@@ -2,6 +2,7 @@ baseURL = 'https://noomatic.tube'
 languageCode = 'en-us'
 title = 'Noomatic'
 rssLimit = 10
+disableKinds = ['taxonomy']
 
 [menu]
 [[menu.main]]
