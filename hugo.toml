@@ -10,8 +10,8 @@ name = 'Home'
 URL = '/'
 weight = 1
 [[menu.main]]
-name = 'Services'
-URL = '/services/'
+name = 'About Us'
+URL = '/about/'
 weight = 2
 [[menu.main]]
 name = 'Contact'

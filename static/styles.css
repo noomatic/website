@@ -408,3 +408,8 @@ textarea:focus {
 button {
 	align-self: center;
 }
+
+.portrait {
+	margin: 10px 0px;
+	border-radius: 10px;
+}
