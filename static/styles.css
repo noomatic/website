@@ -252,6 +252,7 @@ footer {
 	flex-wrap: wrap;
 	gap: var(--grid-gutter);
 	align-items: center;
+	margin: 10px 0px;
 }
 
 .feature > :first-child {
