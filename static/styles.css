@@ -414,3 +414,14 @@ button {
 	margin: 10px 0px;
 	border-radius: 10px;
 }
+
+.super-secret-totally-chill-not-at-all-fake-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
