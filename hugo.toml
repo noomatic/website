@@ -4,16 +4,3 @@ title = 'Noomatic'
 rssLimit = 10
 disableKinds = ['taxonomy']
 
-[menu]
-[[menu.main]]
-name = 'Home'
-URL = '/'
-weight = 1
-[[menu.main]]
-name = 'Services'
-URL = '/services/'
-weight = 2
-[[menu.main]]
-name = 'Contact'
-URL = '/contact/'
-weight = 3
