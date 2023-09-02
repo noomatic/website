@@ -1,6 +1,7 @@
 baseURL = 'https://noomatic.tube'
 languageCode = 'en-us'
 title = 'Noomatic'
+description = 'Noomatic helps startups turn data into AI prototypes.'
 rssLimit = 10
 disableKinds = ['taxonomy']
 

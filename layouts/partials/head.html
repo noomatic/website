@@ -8,4 +8,15 @@
 	<link rel="stylesheet" href="/ibm-plex-mono/latin.css" />
 	{{ hugo.Generator }}
 	{{ template "_internal/opengraph.html" . }}
+
+	<meta property="og:title" content="{{ .Title }}" />
+	<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}" />
+	<meta property="og:image" content='{{ "globe-alt.png" | absURL }}' />
+	<meta property="og:url" content="{{ .Permalink }}" />
+  
+	{{/* Twitter Card tags */}}
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="{{ .Title }}">
+	<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+	<meta name="twitter:image" content='{{ "globe-alt.png" | absURL }}'>
 </head>
