@@ -3,8 +3,9 @@ title: "Privacy Policy"
 date: 2023-09-21
 ---
 
+{{< wrap-div "container" >}}
 
-# Privacy Policy {.container}
+# Privacy Policy
 
 We at Noomatic (together with our affiliates, "Noomatic", "we", "our", or "us")
 respect your privacy.  This Privacy Policy covers all services and websites
@@ -102,3 +103,4 @@ version of our privacy policy on this page.
 
 If you have any questions regarding this Privacy Policy, please contact [privacy@noomatic.tube](mailto:privacy@noomatic.tube).
 
+{{< /wrap-div >}}
