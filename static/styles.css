@@ -124,6 +124,8 @@ h5,
 h6 {
 	line-height: 1.2;
 	font-weight: 400;
+        padding-top: 1em;
+        padding-bottom: .5em;
 }
 
 h1 {
@@ -252,6 +254,7 @@ footer {
 	flex-wrap: wrap;
 	gap: var(--grid-gutter);
 	align-items: center;
+	margin: 10px 0px;
 }
 
 .feature > :first-child {
@@ -407,4 +410,20 @@ textarea:focus {
 
 button {
 	align-self: center;
+}
+
+.portrait {
+	margin: 10px 0px;
+	border-radius: 10px;
+}
+
+.super-secret-totally-chill-not-at-all-fake-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
